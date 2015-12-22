@@ -1,13 +1,12 @@
-module.exports = function (config) {
+module.exports = function makeKarmaConfig(config) {
   config.set({
     basePath: '.',
     frameworks: ['mocha'],
     browsers: ['PhantomJS'],
     files: [
       'node_modules/es5-shim/es5-shim.js',
-      'test/test-helper.js',
       'test/**/*.spec.*',
-      {pattern: 'src/**/*', watched: true, included: false}
+      { pattern: 'src/**/*', watched: true, included: false }
     ],
     preprocessors: {
       'test/**/*.spec.*': ['webpack', 'sourcemap']
