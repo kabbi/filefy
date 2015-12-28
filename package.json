@@ -60,7 +60,11 @@
     "npm": "2.x || 3.x"
   },
   "dependencies": {
+    "concat-stream": "^1.5.1",
     "dnode": "^1.2.2",
-    "multiplex": "^6.6.1"
+    "invert-stream": "0.0.1",
+    "mixin": "^0.2.0",
+    "multiplex": "^6.6.1",
+    "node-uuid": "^1.4.7"
   }
 }

@@ -3,6 +3,7 @@
   "extends": "airbnb/base",
   "rules": {
     "semi": [2, "always"],
-    "comma-dangle": 0
+    "comma-dangle": 0,
+    "dot-notation": 0
   }
 }
