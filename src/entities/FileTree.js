@@ -4,6 +4,7 @@ import FilefyException from './FilefyException';
 import EntryType from './EntryType';
 
 export default class FileTree {
+
   constructor(options = {}) {
     this.root = {
       children: {}

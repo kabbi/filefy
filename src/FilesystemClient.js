@@ -3,9 +3,8 @@ import multiplex from 'multiplex';
 import concat from 'concat-stream';
 import dnode from 'dnode';
 
-import { promisify, fallback } from './utils/Promise';
-
 export default class FilesystemClient extends EventEmitter {
+
   constructor() {
     super();
   }

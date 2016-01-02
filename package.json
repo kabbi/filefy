@@ -65,6 +65,7 @@
     "invert-stream": "0.0.1",
     "mixin": "^0.2.0",
     "multiplex": "^6.6.1",
-    "node-uuid": "^1.4.7"
+    "node-uuid": "^1.4.7",
+    "websocket-stream": "^2.3.0"
   }
 }

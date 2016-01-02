@@ -12,6 +12,7 @@ import { makeBuffer } from './utils/Buffer';
 const METHOD_PREFIX = 'handle';
 
 export default class FilesystemServer extends EventEmitter {
+
   constructor(options = {}) {
     super();
     this.clients = {};
@@ -69,6 +70,11 @@ export default class FilesystemServer extends EventEmitter {
   }
 
   onClientConnected(stream, id) {
+    if (id === 'broker') {
+      // This is not a client, but a broker communication channel
+      // ignore this for now, but can use later to control broker
+      return;
+    }
     const plex = multiplex();
     const apiStream = plex.createStream('api');
     const api = dnode(this.bindApiForClient(id));
